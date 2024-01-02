@@ -8,12 +8,15 @@ document.addEventListener("DOMContentLoaded", async function () {
     const bestMovieId = await getBestMovieId();
     const bestMovie = await getMovieDetails(bestMovieId);
     updateHeroSection(bestMovie);
+<<<<<<< HEAD
 
     const voirPlusButton = document.querySelector('.hero__play_button.modal-trigger');
     if (voirPlusButton) {
       voirPlusButton.dataset.movieId = bestMovieId;
     }
 
+=======
+>>>>>>> 2be4193a055802cfd63e48b61e94c8f054153978
     for (const category of categories) {
       populateCarousel(`${category}-carousel`, category);
     }
@@ -22,6 +25,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   }
 });
 
+<<<<<<< HEAD
 document.addEventListener('click', async (event) => {
   const modalTrigger = event.target.closest('.modal-trigger');
   
@@ -34,12 +38,18 @@ document.addEventListener('click', async (event) => {
 });
 
 
+=======
+>>>>>>> 2be4193a055802cfd63e48b61e94c8f054153978
 async function getBestMovieId() {
   try {
     const url = `${homeUrl}/titles/?format=json&sort_by=-imdb_score&page=1`;
     const response = await fetch(url);
     const data = await response.json();
 
+<<<<<<< HEAD
+=======
+    // Assuming the first result is the best movie
+>>>>>>> 2be4193a055802cfd63e48b61e94c8f054153978
     const bestMovieId = data.results[0].id;
 
     return bestMovieId;
@@ -111,8 +121,13 @@ async function createUrls(category, page) {
 
 async function populateCarousel(carouselId, category) {
   const carousel = document.getElementById(carouselId);
+<<<<<<< HEAD
   try {
 
+=======
+
+  try {
+>>>>>>> 2be4193a055802cfd63e48b61e94c8f054153978
     const movies = await getAllData(category);
 
     if (!carousel) {
@@ -156,15 +171,24 @@ function createMovieItem(movie) {
   const imageUrl = movie.image_url;
   const title = movie.title;
 
+<<<<<<< HEAD
   item.innerHTML =  `
   <a href="#" class="modal-trigger" data-movie-id="${movie.id}">
     <img src="${imageUrl}" alt="${title}" class="image-item">
   </a>
 `;
+=======
+  item.innerHTML = `
+    <a href="#">
+      <img src="${imageUrl}" alt="${title}" class="image-item">
+    </a>
+  `;
+>>>>>>> 2be4193a055802cfd63e48b61e94c8f054153978
 
   return item;
 }
 
+<<<<<<< HEAD
 function showMovieModal(movieDetails) {
 
   const modalContainer = document.getElementById('modalContainer');
@@ -204,6 +228,8 @@ function showMovieModal(movieDetails) {
     console.log('Modal closed');
   });
 }
+=======
+>>>>>>> 2be4193a055802cfd63e48b61e94c8f054153978
 
 function scrollCarousel(container, direction) {
   const items = container.querySelectorAll('.item');
@@ -218,3 +244,24 @@ function scrollCarousel(container, direction) {
   });
 }
 
+<<<<<<< HEAD
+=======
+/* async function fetchAndDisplayTopRatedMovie() {
+    try {
+        const response = await fetch(`${homeUrl}/titles/?format=json&sort_by=-imdb_score`);
+        const data = await response.json();
+
+        if (data.results.length > 0) {
+            const topRatedMovie = data.results[0];
+            // Assuming you have elements with IDs 'hero-title' and 'hero-poster'
+            document.getElementById('hero-title').textContent = topRatedMovie.title;
+            document.getElementById('hero-poster').src = topRatedMovie.image_url;
+        }
+    } catch (error) {
+        console.error('Error fetching top-rated movie:', error);
+    }
+} */
+
+
+// Function to scroll the carousel
+>>>>>>> 2be4193a055802cfd63e48b61e94c8f054153978

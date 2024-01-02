@@ -86,6 +86,7 @@ header {
     text-align: center; 
   }
   
+<<<<<<< HEAD
 
   #hero-poster {
     border-radius: 8px; 
@@ -128,6 +129,69 @@ header {
     position: relative;
   }
   
+=======
+.sub-nav a:hover {
+    color: var(--dark);
+}
+#best-movie {
+    background-color: #1f1f1f; 
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+  }
+  
+
+  .hero {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+  }
+  
+
+  #hero-poster {
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 100%; 
+  }
+
+  .hero__info {
+    margin-top: 20px; 
+  }
+  
+
+  #hero-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .hero__play_button {
+    background-color: #e50914; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s; 
+   }
+  #hero-summary {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .hero__play_button {
+    margin-top: 20px; 
+  }
+  
+  .img__gradient {
+    position: relative;
+  }
+  
+>>>>>>> 2be4193a055802cfd63e48b61e94c8f054153978
   .img__gradient::before {
     content: '';
     position: absolute;
@@ -138,6 +202,7 @@ header {
     background: linear-gradient(to bottom, rgba(31, 31, 31, 0), #1f1f1f); /* Dégradé transparent vers le noir */
   }
 
+<<<<<<< HEAD
   .modal {
     display: none;
     position: fixed;
@@ -149,6 +214,9 @@ header {
     border: 1px solid #ccc;
     z-index: 999;
   }
+=======
+
+>>>>>>> 2be4193a055802cfd63e48b61e94c8f054153978
 
 
 
@@ -174,10 +242,17 @@ width: 95%;
   top: 50%;
   height: 50px;
   width: 50px;
+<<<<<<< HEAD
   color: #000;
   border: none;
   outline: none;
   background: #fff;
+=======
+  color: #fff;
+  border: none;
+  outline: none;
+  background: #000;
+>>>>>>> 2be4193a055802cfd63e48b61e94c8f054153978
   font-size: 2.2rem;
   cursor: pointer;
   border-radius: 50%;
@@ -207,6 +282,7 @@ width: 95%;
   width: 400px;
 }
 
+<<<<<<< HEAD
 .item:hover{
   transition: transform .3s;
   -ms-transform: scale(1.4);
@@ -214,6 +290,8 @@ width: 95%;
   transform: scale(1.4);
 }
 
+=======
+>>>>>>> 2be4193a055802cfd63e48b61e94c8f054153978
 .item img {
   height: 100%; 
   object-fit: cover; 
